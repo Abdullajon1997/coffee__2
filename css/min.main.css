@@ -109,6 +109,7 @@
 /* ========== header ========== */
 header{
     background-color: #F2F2F2;
+    display: contents;
 }
 .header__inner
 {
@@ -124,7 +125,7 @@ header{
     margin: auto;
     
 }
-.header__nav__ul
+.header__nav__list
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -146,16 +147,15 @@ header{
 .header__nav__link:hover
 {
     color: black;
-    font-weight: 900;
-    font-size: 14px;
     background:-o-linear-gradient(315deg,blue,gold,green,red);
     background:linear-gradient(135deg,blue,gold,green,red);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    border-radius: 15px;
 
     
 }
-.header__nav__ul__li
+.header__nav__list__item
 {
     margin: 0 0 0 32px;
     font-family: 'Barlow';
@@ -174,13 +174,14 @@ header{
 }
 .logo:hover
 {
-    background-color: blue;
-    border: 3px dotted red;
+    background:-o-linear-gradient(315deg,blue,gold,green,red);
+    background:linear-gradient(135deg,blue,gold,green,red);
+    border-radius: 5px;
 
 }
 /* ========== section ============ */
 
-.simple__inner
+.hero__inner
 {
     background-image: url(../jpg/simple.png);
     width: 100%;
@@ -190,17 +191,18 @@ header{
     background-color: #F2F2F2;
     margin: 50px auto;
 }
-.simple__h1
+.hero__h1
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 72px;
     color: #FEFCF7;
     padding: 62px 0 0 162px;
+    margin-bottom: 32px;
 }
-.simple__p
+.hero__p
 {
     font-family: 'Barlow';
     font-style: normal;
@@ -212,11 +214,11 @@ header{
     opacity: 0.8;
     padding: 0px 0 0 165px;
 }
-.simple__link
+.hero__link
 {
     background: #0E8784;
     border-radius: 6px;
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -226,7 +228,7 @@ header{
     padding: 15px 31px;
     text-decoration: none;
 }
-.simple__link:hover
+.hero__link:hover
 {
     background:-o-linear-gradient(315deg,blue,gold,green,red,black);
     background:linear-gradient(135deg,blue,gold,green,red,black);
@@ -234,12 +236,12 @@ header{
     color: black;
     border-radius: 6px;
 }
-.simple__div
+.hero__div
 {
     padding: 71px 0 0 165px;
 }
 /*============ our__collection ===========*/
-.our__collection
+.our__inner
 {
     background-image: url(../jpg/our__colection.png);
     background-repeat: no-repeat;
@@ -250,14 +252,14 @@ header{
     background-color: #F2F2F2;
 
 }
-.our__collection__img
+.our__img
 {
     display: block;
     width: 255px;
     height: 193px;
     margin-bottom: 71px;
 }
-.our__collection__ul
+.our__list
 {
     text-align: center;
     display: -webkit-box;
@@ -275,25 +277,26 @@ header{
 
 }
 
-.our__collection__ul__li
+.our__list__item
 {
     margin-top: 140px;
 }
-.our__collection__ul__li:hover
+.our__list__item:hover
 {
-    border: 3px dotted blue;
+    border: 1px dotted blue;
     background-color:#8c8f8f;
     color: white;
+    border-radius: 15px;
 }
-.our__collection__img__1
+.our__img__1
 {
     width: 234.82px;
     height: 177.48px;
     margin-bottom: 71px;
 }
-.our__collection__h2
+.our__h2
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -309,7 +312,7 @@ header{
             align-items: center;
     margin-bottom: 24px;
 }
-.our__collection__p
+.our__p
 {
     font-family: 'Barlow';
     font-style: normal;
@@ -334,7 +337,7 @@ header{
 }
 .chose__h2
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
@@ -359,7 +362,7 @@ header{
     margin: 32px auto;
 
 }
-.chose__ul
+.chose__list
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,7 +377,7 @@ header{
     
     
 }
-.chose__ul__li
+.chose__list__item
 {
     background: #0E8784;
     border-radius: 8px;
@@ -384,7 +387,7 @@ header{
     margin: 0 auto;
 
 }
-.chose__ul__li:hover
+.chose__list__item:hover
 {
     border: 3px dotted blue;
     background-color: #044948;
@@ -403,7 +406,7 @@ fill: blue;
 }
 .chose__h3
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -427,7 +430,7 @@ fill: blue;
 }
 /* =========== works=========== */
 
-.works__ul
+.works__list
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,7 +449,7 @@ fill: blue;
     background-position-x: 50px;
     position: relative;
 }
-.works__ul__li
+.works__list__item
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -461,7 +464,7 @@ fill: blue;
 }
 .works__h2
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -470,7 +473,7 @@ fill: blue;
     margin-bottom: 95px;
     padding: 43px;
 }
-.work__ul
+.works__liste
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -482,7 +485,7 @@ fill: blue;
         -ms-flex-align: center;
             align-items: center;
 }
-.work__ul__li
+.works__list__items
 {
     display: block;
     -webkit-box-pack: justify;
@@ -492,9 +495,9 @@ fill: blue;
         -ms-flex-align: center;
             align-items: center;
 }
-.work__h3
+.works__h3
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -503,16 +506,16 @@ fill: blue;
     margin-bottom: 38px;
 
 }
-.work__h3:hover
+.works__h3:hover
 {
     background:-o-linear-gradient(55deg,blue,gold,green,red,black,pink,purple);
     background:linear-gradient(35deg,blue,gold,green,red,black,pink,purple);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.work__h4
+.works__h4
 {
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
@@ -520,7 +523,7 @@ fill: blue;
     color: #333D4B;
     margin-bottom: 42px;
 }
-.work__p
+.works__p
 {
     font-family: 'Barlow';
     font-style: normal;
@@ -531,11 +534,15 @@ fill: blue;
     width: 400px;
    
 }
-.work__link
+.works__img
+{
+    display: block;
+}
+.works__link
 {
     background: #0E8784;
     border-radius: 6px;
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -546,15 +553,15 @@ fill: blue;
     text-decoration: none;
     margin: 79px 0 216px 30px;
 }
-.work__link:hover
+.works__link:hover
 {
     border: 3px dotted blue;
     background:-o-linear-gradient(315deg,blue,gold,green,red,black);
     background:linear-gradient(135deg,blue,gold,green,red,black);
     color: black;
-    border-radius: 5px;
+    border-radius: 6px;
 }
-.work__link__div
+.works__link__div
 {
     margin-top: 50px;
 }
@@ -578,11 +585,18 @@ footer
     margin-top: 216px;
     background-color: #2C343E;
 }
-.logo__2
+.footer__logo-2
 {
     width: 203px;
 }
-.footer__ul
+.footer__logo-2:hover
+{
+    background:-o-linear-gradient(315deg,blue,gold,green,red);
+    background:linear-gradient(135deg,blue,gold,green,red);
+    border-radius: 5px;
+    
+}
+.footer__list
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -596,7 +610,7 @@ footer
     list-style: none;
     padding: 53px;
 }
-.end__ul
+.footer__liste
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -612,18 +626,39 @@ footer
     padding: 0 0 0 50px;
     
 }
-.end__ul__li
+.footer__list__items
 {
     color: #FEFCF7;
     display: block;
     padding: 0 0 0 32px;
    
 }
-.end__ul__img
+.footer__list__image
 {
     padding: 0 0 0 24px;
 }
 svg:hover path
 {
     fill: #FDD6BA;
+}
+.footer__nav__link
+{
+    text-decoration: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+.footer__nav__link:hover
+{
+    color: black;
+    background:-o-linear-gradient(315deg,blue,gold,green,red);
+    background:linear-gradient(135deg,blue,gold,green,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border-radius: 15px;
 }
